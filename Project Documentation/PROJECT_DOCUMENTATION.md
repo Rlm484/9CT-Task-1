@@ -1,6 +1,9 @@
 # **Assessment Task 1 2026**
 # Phase 1 - Identifying and Defining
 ## Mindmap
+![Mindmap](Images/Mindmap.png)
+
+[Miro Mindmap Link!](https://miro.com/app/board/uXjVHdK6NuQ=/?share_link_id=179304639963)
 
 ## Defining My Purpose
 
@@ -25,3 +28,4 @@
 ## Discussing my Findings
 
 ## Aquiring my Data
+> [GOOGLE FORM!: What are YOUR thoughts on Military?](https://forms.gle/VNycTJ2GhKjxYJcd9)
