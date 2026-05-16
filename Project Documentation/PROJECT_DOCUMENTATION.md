@@ -21,7 +21,7 @@
 ### Non-Functional Requirements
 > Usability: The UI should offer multiple choices for the user to choose from, while also being labelled in a way that clearly lets the user know what they are actually selecting (E.g. instead of a choice being [See Graph], it should instead be [Data Visualisation of Survey Outcomes]). On top of this, the README should...
 
-> Reliability: What is required from the system when providing information to the user on errors and ensuring data integrity? The system should be able to register invalid responses and instead output an [INVALID: PLEASE TRY AGAIN] message for the user. This should prevent most errors, however, should other errors appear, a try/except OR if/elif/ekse code will run to register any outputs or inputs that could cause issues, presenting a different error code, [ERROR: SYSTEM MALFUNCTION, PLEASE TRY AGAIN]. In regards to data integrity, the system should be able to present the collected data as is, whether the form differs, the core data should remain accurate and consistent throughout the system. This data is also collected through public survey, so averages should be properly calculated through python functions, again remaining consistent with the original data. In regards to the viewable raw data, it should be complete and discernible for users to view and compare to the summarised displays. On top of all this, no data from the users should be collected, so overall, data integrity is ensured in majority of aspects.
+> Reliability: The system should be able to register invalid responses and instead output an [INVALID: PLEASE TRY AGAIN] message for the user. This should prevent most errors, however, should other errors appear, a try/except OR if/elif/ekse code will run to register any outputs or inputs that could cause issues, presenting a different error code, [ERROR: SYSTEM MALFUNCTION, PLEASE TRY AGAIN]. In regards to data integrity, the system should be able to present the collected data as is, whether the form differs, the core data should remain accurate and consistent throughout the system. This data is also collected through public survey, so averages should be properly calculated through python functions, again remaining consistent with the original data. In regards to the viewable raw data, it should be complete and discernible for users to view and compare to the summarised displays. On top of all this, the responses from the actual google form will not be displayed with names, but the correlating order in submition to ensure privacy for those responding as well, ensuring data integrity for users.
 ### Use-Case
 >  
     Actor: User
@@ -70,7 +70,17 @@
 ### https://www.abs.gov.au/articles/australian-defence-force-service
 ### https://theforge.defence.gov.au/article/deep-dive-our-tiny-recruitment-pool
 ### https://generationsurvey.org.au/data_story/young-australians-aspire-to-join-the-defence-force/?utm_source=copilot.com
-## Discussing my Findings
+## Discussing my Findings - SEEC/L
+### In regards to the overall information retrieved from the websites listed, a common point I've found is the fact that only a very small minority of the population actually serve in the army. You see, when refering to enlistment, there are actually 2 major parts. The first is choosing to enlist (signing up for the army), and the second is being actually chosen to be a part of the ADF. When seeing if a young person is eligible to serve, the ADF does have to still see if they meet the criteria (e.g. health, criminal records, etc). These factors make the pool of recruits even smaller for the ADF, subsequently, only 16% of young Australians both meet the criteria to qualify for  the ADF, and actually show the interest to join the military, causing only a minority to serve. 
 
+### Leading on from the last paragraph, the majority of people who enlist seem to be university graduates. When looking at the goverment sight abs, we can see that the age that gets the most enlisters is 25-34, the average age where people have graduated from university. The total count in fact, was 21,168 people in 2021, compared to the runnerups (15-24) being 14,710, a full 144% increase in people. This data can allow us to corrolate the fact that people who want to go to the army probably want to get their education out of the way before starting, showing further evidence of university graduates probably being the biggest portion of the ADF. However, following the last paragraph, 21,168 people isnt actually a large number. Australia had 25.4 million people in 2021, meaning that the largest portion in the people enlisting (age wise), doesn't even add up to 1% of the population. This also further shows the fact that the amount of people that enlist are a very small minority overall.
 ## Aquiring my Data
 > ### [GOOGLE FORM!: What are YOUR thoughts on Military?](https://forms.gle/VNycTJ2GhKjxYJcd9)
+### The above is a google form for the students of Gosford High School, which includes responses from peers in the community.
+## Teenage thoughts on Enlistment -  Data Dictonary
+|Field|Datatype|Format for Display|Description|Example|Validation|
+|-|-|-|-|-|-|
+|Submition_Number|Title|
+|Enlistment_Thoughts_1-10|Text|
+||||
+# **Phase 3 - Producing and Implementing**
