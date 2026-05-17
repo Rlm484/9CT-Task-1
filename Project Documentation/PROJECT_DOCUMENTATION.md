@@ -6,7 +6,7 @@
 [Miro Mindmap Link!](https://miro.com/app/board/uXjVHdK6NuQ=/?share_link_id=179304639963)
 
 ## Defining My Purpose
-### Hypothesis: *Students are Less Likely to Enlist after High School*
+### Hypothesis: *Students in Gosford High are LESS LIKELY to enlist for the ADF after High School*
 ## Requirement Outline
 ### Functional Requirements
 >Data Loading: It should be able to load CSV files into data frames while also handling errors or invalid input in a way that doesn't crash the program. The program should also be able to open charts and graphs without any issues or missing images/pieces of data within the files.
@@ -21,7 +21,7 @@
 ### Non-Functional Requirements
 > Usability: The UI should offer multiple choices for the user to choose from, while also being labelled in a way that clearly lets the user know what they are actually selecting (E.g. instead of a choice being [See Graph], it should instead be [Data Visualisation of Survey Outcomes]). On top of this, the README should...
 
-> Reliability: The system should be able to register invalid responses and instead output an [INVALID: PLEASE TRY AGAIN] message for the user. This should prevent most errors, however, should other errors appear, a try/except OR if/elif/ekse code will run to register any outputs or inputs that could cause issues, presenting a different error code, [ERROR: SYSTEM MALFUNCTION, PLEASE TRY AGAIN]. In regards to data integrity, the system should be able to present the collected data as is, whether the form differs, the core data should remain accurate and consistent throughout the system. This data is also collected through public survey, so averages should be properly calculated through python functions, again remaining consistent with the original data. In regards to the viewable raw data, it should be complete and discernible for users to view and compare to the summarised displays. On top of all this, the responses from the actual google form will not be displayed with names, but the correlating order in submition to ensure privacy for those responding as well, ensuring data integrity for users.
+> Reliability: The system should be able to register invalid responses and instead output an [INVALID: PLEASE TRY AGAIN] message for the user. This should prevent most errors, however, should other errors appear, a try/except OR if/elif/ekse code will run to register any outputs or inputs that could cause issues, presenting a different error code, [ERROR: SYSTEM MALFUNCTION, PLEASE TRY AGAIN]. In regards to data integrity, the system should be able to present the collected data as is, whether the form differs, the core data should remain accurate and consistent throughout the system. This data is also collected through public survey, so averages should be properly calculated through python functions, again remaining consistent with the original data. In regards to the viewable raw data, it should be complete and discernible for users to view and compare to the summarised displays. On top of all this, the responses from the actual google form will not be displayed with names, but the correlating order in submition to ensure privacy for those responding as well, ensuring data integrity for users. Within the actual interface itself, user names will not be stored, and all variables related to it will be cleared and reset once the program ends.
 ### Use-Case
 >  
     Actor: User
@@ -35,8 +35,9 @@
     - The user is able to access the system through forking a github repository, allowing them to access the data within through cloning it through Github Desktop (therefore the user must have access to Github along with Github Desktop)
 
     Main Flow:
+    User runs the main.py code and enters in their UID
 
-    User runs the main.py file and views/sees the user interface along with all the choices/options
+    User views/sees the user interface along with all the choices/options
 
     User chooses one of the 5 different options with different outcomes:
     1. View the Data Frame of Raw Data?

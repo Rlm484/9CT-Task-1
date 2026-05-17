@@ -1,47 +1,51 @@
 import sys
 import os
 import time
-#from data_module import()
+from data_module import(
+    raw_data,
+    cs,
+    ani,
+    ani2,
+    enlist_avg,
+    housing_avg,
+    employ_avg,
+    edu_avg,
+    cd_avg
 
-def cs():                 #Function from the game I made earlier this year
-    print()
-    time.sleep(1.5)
-    # Check the operating system and run the appropriate clear command
-    if os.name == 'nt':  # Windows
-        os.system('cls')
-    else:  # macOS and Linux
-        os.system('clear')
-
-def ani(text, delay=0.04): #Function from the game I made earlier this year
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(delay)
-    print()  # Move to the next line
-
-def ani2(text, delay=0.06): #Function from the game I made earlier this year
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(delay)
-    print()  # Move to the next line
+)
 
 def ui():
+    ani("Welcome User to the 'Enlistment Data Interface'! What shall we call you during your time here?")
+    name = input("")
+    ani(f"Hello {name}, we hope you enjoy your stay")
+    ani2(f"USER: {name}")
+    ani2("ENTERING DATA INTERFACE...")
+    cs()
     while True:
         print("-=- Enlistment Data Interface -=-")
+        ani(f"USER: {name}")
         ani("1. View Raw Data")
-        ani("2. View Data Visualisation: Do people want to Enlist?")
-        ani("3. View Data Visualisation: Why people would Enlist?")
+        ani("2. View Data Visualisation: Do people want to Enlist")
+        ani("3. View Data Visualisation: Why people would Enlist")
         ani("4. View Averages")
         ani("5. Exit Program")
-
+        print("")
         ani("Please select an option (1-5): ")
         pc = int(input(""))
 
         if pc == 1:    
             ani2("Loading...")
             cs()
-            print("Raw Data here")
+            raw_data()
+            choice="n"
+            while choice.lower()=="n":
+                ani("Would you like to exit the sub-program? (y/n)")
+                choice = input("")
+                if choice.lower() == "y":
+                    ani2("Exiting sub-program...")
+                    cs()
+                else:
+                    print("")
 
         elif pc == 2:
             ani2("Loading...")
@@ -50,12 +54,13 @@ def ui():
             ani("a) View as a Pie Chart")
             ani("b) View as a Bar Chart")
             p2 = input()
-            ani2("Loading...")
 
             if p2 == "a":
+                ani2("Loading...")
                 cs()
                 print("Pie chart here for if enlist")
             elif p2 == "b":
+                ani2("Loading...")
                 cs()
                 print("Bar chart here for if enlist")
             else:
@@ -71,12 +76,13 @@ def ui():
             ani("a) View as a Pie Chart")
             ani("b) View as a Bar Chart")
             p3 = input()
-            ani2("Loading...")
 
             if p3 == "a":
+                ani2("Loading...")
                 cs()
                 print("Pie chart here for why enlist")
             elif p3 == "b":
+                ani2("Loading...")
                 cs()
                 print("Bar chart here for why enlist")
             else:
@@ -93,35 +99,128 @@ def ui():
 b) View Averages for thoughts on Enlisting for Housing? (Choices were made on a scale of 1-5)
 c) View Averages for thoughts on Enlisting for Employment? (Choices were made on a scale of 1-5)
 d) View Averages for thoughts on Enlisting for Eduucation? (Choices were made on a scale of 1-5)
-e) View Averages for thoughts on Enlisting for Civil Duty? (Choices were made on a scale of 1-5)""")
+e) View Averages for thoughts on Enlisting for Civil Duty? (Choices were made on a scale of 1-5)
+f) View all Averages
+g) Exit sub-program""")
+
             p4 = input()
-            ani2("Loading...")
 
             if p4 == "a":
+                ani2("Loading...")
                 cs()
-                print("average calculation for enlistment")
+                ani2("Calculating...")
+                enlist_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
             elif p4 == "b":
+                ani2("Loading...")
                 cs()
-                print("average calculation for housing")
+                ani2("Calculating...")
+                housing_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
             elif p4 == "c":
+                ani2("Loading...")
                 cs()
-                print("average calculation for employment")
+                ani2("Calculating...")
+                employ_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
             elif p4 == "d":
+                ani2("Loading...")
                 cs()
-                print("average calculation for education")
+                ani2("Calculating...")
+                edu_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
             elif p4 == "e":
+                ani2("Loading...")
                 cs()
-                print("average calculation for civil duty")
+                ani2("Calculating...")
+                cd_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
+            elif p4 == "f":
+                ani2("Loading...")
+                cs()
+                ani2("Calculating...")
+                enlist_avg()
+                housing_avg()
+                employ_avg()
+                edu_avg()
+                cd_avg()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        print("")
+
+            elif p4 == "g":
+                ani2("Exiting sub-program...")
+                cs()
+
             else:
                 cs()
                 ani("INVALID: REASON -> 'Invalid Input'")
                 ani("PLEASE TRY AGAIN")
                 cs()
+
         elif pc == 5:
-            ani("Exiting Program...")
-            ani("Thank you for using the 'Enlistment Data Interface'")
+            ani2("Exiting Program...")
+            ani(f"Thank you {name} for using the 'Enlistment Data Interface', we hope you have a wonderful day!")
             cs()
             break
+
         else:
             ani("INVALID: REASON -> 'Invalid Input'")
             ani("PLEASE TRY AGAIN")
