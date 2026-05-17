@@ -79,9 +79,3 @@ def cd_avg():
                             )
     avg = rd_df['Civil Duty Rating (1-5)'].mean()
     ani(f"The average score for peoples thoughts on Enlisting for Civil Duty (on a scale of 1-5; simplified to 2.d.p) is: [{avg:.2f}/5]")
-
-enlist_avg()
-housing_avg()
-employ_avg()
-edu_avg()
-cd_avg()
