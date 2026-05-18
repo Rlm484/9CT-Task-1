@@ -88,11 +88,14 @@
 ## Teenage thoughts on Enlistment -  Data Dictonary
 |Field|Datatype|Format for Display|Description|Example|Validation|
 |-|-|-|-|-|-|
-|Submition_Number|str|X...X|Number representing the responders in the same order the responses come in.|#23|Must have a # in front to discern from the row numbers. Following should be 1-2 numbers.|
-|Enlistment Thoughts 1-10|int|N...N|Scale of 1-10 on how responders view enlistment. 10 being 'AMAZING', 1 being 'HORRIBLE'.|10|Must be a number consisting of 1-2 digits lying on the range 1-10.|
-|Enlistment for Housing 1-5|int|N|Scale of 1-5 on responders thought on enlistig for housing if they were to enlist.|3|Must be a number consisting of 1 digit lying on the range 1-5.|
-|Enlistment for Employment 1-5|int|N|Scale of 1-5 on responders thought on enlistig for emplyment if they were to enlist.|5|Must be a number consisting of 1 digit lying on the range 1-5.|
-|Enlistment for Education 1-5|int|N|Scale of 1-5 on responders thought on enlistig for education if they were to enlist.|2|Must be a number consisting of 1 digit lying on the range 1-5.|
-|Enlistment for Civil Duty 1-5|int|N|Scale of 1-5 on responders thought on enlistig for civil duty if they were to enlist.|4|Must be a number consisting of 1 digit lying on the range 1-5.|
+|Recipient Number|str|X...X|Number representing the responders in the same order the responses come in.|#23|Must have a # in front to discern from the row numbers. Following should be 1-2 numbers.|
+|Enlistment Thoughts (1-10)|int|N...N|Scale of 1-10 on how responders view enlistment. 10 being 'AMAZING', 1 being 'HORRIBLE'.|10|Must be a number consisting of 1-2 digits lying on the range 1-10.|
+|Enlistment for Housing (1-5)|int|N|Scale of 1-5 on responders thought on enlistig for housing if they were to enlist.|3|Must be a number consisting of 1 digit lying on the range 1-5.|
+|Enlistment for Employment (1-5)|int|N|Scale of 1-5 on responders thought on enlistig for emplyment if they were to enlist.|5|Must be a number consisting of 1 digit lying on the range 1-5.|
+|Enlistment for Education (1-5)|int|N|Scale of 1-5 on responders thought on enlistig for education if they were to enlist.|2|Must be a number consisting of 1 digit lying on the range 1-5.|
+|Enlistment for Civil Duty (1-5)|int|N|Scale of 1-5 on responders thought on enlistig for civil duty if they were to enlist.|4|Must be a number consisting of 1 digit lying on the range 1-5.|
+|Highest Rated Section|str|XX...XX|Word/s representing a specific reason someone may enlist that each responder chose|Civil Duty|Must be a word/s that comes from the 4 options given in the form| 
+
 
 # **Phase 3 - Producing and Implementing**
+### PLEASE REFER TO READ-ME FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE 
