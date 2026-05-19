@@ -96,6 +96,5 @@
 |Enlistment for Civil Duty (1-5)|int|N|Scale of 1-5 on responders thought on enlistig for civil duty if they were to enlist.|4|Must be a number consisting of 1 digit lying on the range 1-5.|
 |Highest Rated Section|str|XX...XX|Word/s representing a specific reason someone may enlist that each responder chose|Civil Duty|Must be a word/s that comes from the 4 options given in the form| 
 
-
 # **Phase 3 - Producing and Implementing**
-### PLEASE REFER TO READ-ME FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE 
+### PLEASE REFER TO READ-ME FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE

@@ -1,6 +1,3 @@
-import sys
-import os
-import time
 from data_module import(
     raw_data,
     cs,
@@ -10,8 +7,11 @@ from data_module import(
     housing_avg,
     employ_avg,
     edu_avg,
-    cd_avg
-
+    cd_avg,
+    bcif,
+    bcwhy,
+    pci,
+    pcw
 )
 
 def ui():
@@ -25,7 +25,7 @@ def ui():
         print("-=- Enlistment Data Interface -=-")
         ani(f"USER: {name}")
         ani("1. View Raw Data")
-        ani("2. View Data Visualisation: Do people want to Enlist")
+        ani("2. View Data Visualisation: How people see Enlistment (1-10)")
         ani("3. View Data Visualisation: Main reason people would Enlist")
         ani("4. View Averages")
         ani("5. Exit Program")
@@ -50,25 +50,62 @@ def ui():
         elif pc == "2":
             ani2("Loading...")
             cs()
-            ani("How would you like to view this Data? (a,b)")
+            ani("How would you like to view this Data? (a,b,c,d)")
             ani("a) View as a Pie Chart")
             ani("b) View as a Bar Chart")
             ani("c) View both Charts")
             ani("d) Exit sub-program")
             p2 = input()
-
+            
             if p2 == "a":
                 ani2("Loading...")
                 cs()
-                print("Pie chart here for if enlist")
+                pci()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        pci()
+                        print("")
+            
             elif p2 == "b":
                 ani2("Loading...")
                 cs()
-                print("Bar chart here for if enlist")
+                bcif()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        bcif()
+                        print("")
+            
             elif p2 == "c":
                 ani2("Loading...")
                 cs()
-                print("All charts here")
+                pci()
+                bcif()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        pci()
+                        bcif()
+                        print("")
             
             elif p2 == "d":
                 ani2("Exiting sub-program...")
@@ -83,7 +120,7 @@ def ui():
         elif pc == "3":
             ani2("Loading...")
             cs()
-            ani("How would you like to view this Data? (a,b)")
+            ani("How would you like to view this Data? (a,b,c,d)")
             ani("a) View as a Pie Chart")
             ani("b) View as a Bar Chart")
             ani("c) View both Charts")
@@ -93,17 +130,52 @@ def ui():
             if p3 == "a":
                 ani2("Loading...")
                 cs()
-                print("Pie chart here for why enlist")
+                pcw()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        pcw()
+                        print("")
 
             elif p3 == "b":
                 ani2("Loading...")
                 cs()
-                print("Bar chart here for why enlist")
+                bcwhy()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        bcwhy()
+                        print("")
 
             elif p3 == "c":
                 ani2("Loading...")
                 cs()
-                print("All charts here")
+                pcw()
+                bcwhy()
+                print("")
+                choice = "n"
+                while choice.lower()=="n":
+                    ani("Would you like to exit the sub-program? (y/n)")
+                    choice = input("")
+                    if choice.lower() == "y":
+                        ani2("Exiting sub-program...")
+                        cs()
+                    else:
+                        pcw()
+                        bcwhy()
+                        print("")
 
             elif p3 == "d":
                 ani2("Exiting sub-program...")

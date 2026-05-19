@@ -3,7 +3,6 @@ import os
 import time
 import pandas as pd
 import matplotlib.pyplot as plt
-import csv
 import numpy as np
 
 def cs():                 #Function from the game I made earlier this year
@@ -22,7 +21,7 @@ def ani(text, delay=0.04): #Function from the game I made earlier this year
         time.sleep(delay)
     print()  # Move to the next line
 
-def ani2(text, delay=0.08): #Function from the game I made earlier this year
+def ani2(text, delay=0.085): #Function from the game I made earlier this year
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -82,13 +81,19 @@ def cd_avg(): #avg of the civil duty rating column in raw data
     avg = rd_df['Civil Duty Rating (1-5)'].mean()
     ani(f"The average score for peoples thoughts on Enlisting for Civil Duty (on a scale of 1-5; simplified to 2.d.p) is: [{avg:.2f}/5]")
 
-def bci(): #bar chart if enlist
+def bcif(): #bar chart if enlist
     fig, ax = plt.subplots()
 
     rd_df = pd.read_csv(
                         'Main/data/enlistment_data.csv',
                         header=None,
-                        names=['Recipient No.','Enlistment Rating (1-10)','Housing Rating (1-5)','Employment Rating (1-5)','Education Rating (1-5)','Civil Duty Rating (1-5)','Highest Rated Section']
+                        names=['Recipient No.',
+                               'Enlistment Rating (1-10)',
+                               'Housing Rating (1-5)',
+                               'Employment Rating (1-5)',
+                               'Education Rating (1-5)',
+                               'Civil Duty Rating (1-5)',
+                               'Highest Rated Section']
                         )
     
     ratings = rd_df.iloc[:, 1].tolist()
@@ -109,14 +114,94 @@ def bci(): #bar chart if enlist
 
     plt.show()
 
+def bcwhy(): #bar chart why enlist
+    fig, ax = plt.subplots()
 
-def bcw(): #bar chart why enlist
-    print("")
+    rd_df = pd.read_csv(
+                        'Main/data/enlistment_data.csv',
+                        header=None,
+                        names=['Recipient No.',
+                               'Enlistment Rating (1-10)',
+                               'Housing Rating (1-5)',
+                               'Employment Rating (1-5)',
+                               'Education Rating (1-5)',
+                               'Civil Duty Rating (1-5)',
+                               'Highest Rated Section']
+                        )
+    
+    ratings = rd_df['Highest Rated Section'].value_counts()
+
+    colours = plt.cm.PuBu(np.linspace(0,1,len(ratings)))
+
+    plt.ylim(0,37)
+    ax.yaxis.set_minor_locator(plt.MultipleLocator(1))
+    ax.bar(ratings.index,ratings.values,color=colours)
+    plt.title("Peoples Highest Rated Reason to Enlist")
+    plt.xlabel("Reasons to Enlist")
+    plt.ylabel("Number of Recipients")
+
+    plt.show()
 
 def pci(): #pie chart if enlist
-    print("")
+    rd_df = pd.read_csv(
+                        'Main/data/enlistment_data.csv',
+                        header=None,
+                        names=['Recipient No.',
+                               'Enlistment Rating (1-10)',
+                               'Housing Rating (1-5)',
+                               'Employment Rating (1-5)',
+                               'Education Rating (1-5)',
+                               'Civil Duty Rating (1-5)',
+                               'Highest Rated Section']
+                        )
+    
+    times = rd_df["Enlistment Rating (1-10)"].value_counts().sort_index()
+
+    pltmap=plt.get_cmap("Pastel2")
+    colors = pltmap(np.linspace(0,1,len(times)))
+
+    plt.figure(figsize=(6,6))
+    plt.pie(
+        times,
+        labels=times.index,
+        autopct='%1.1f%%',
+        startangle=90,
+        colors=colors
+    )
+
+    plt.title("Enlistment Ratings across GHS [Percentages rounded to 1d.p]")
+    plt.axis("equal")
+    plt.show()
 
 def pcw(): #pie chart why enlist
-    print("")
+    rd_df = pd.read_csv(
+                        'Main/data/enlistment_data.csv',
+                        header=None,
+                        names=['Recipient No.',
+                               'Enlistment Rating (1-10)',
+                               'Housing Rating (1-5)',
+                               'Employment Rating (1-5)',
+                               'Education Rating (1-5)',
+                               'Civil Duty Rating (1-5)',
+                               'Highest Rated Section']
+                        )
+    
+    times = rd_df["Highest Rated Section"].value_counts()
 
-bci()
+    pltmap=plt.get_cmap("Pastel1")
+    colors = pltmap(np.linspace(0,1,len(times)))
+
+    plt.figure(figsize=(6,6))
+    plt.pie(
+        times,
+        labels=times.index,
+        autopct='%1.1f%%',
+        startangle=90,
+        colors=colors
+    )
+
+    plt.title("Peoples Highest Rated Reason to Enlist [Percentages rounded to 1d.p]")
+    plt.axis("equal")
+    plt.show()
+
+pci()
