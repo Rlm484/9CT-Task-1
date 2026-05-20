@@ -38,7 +38,7 @@ def ui():
             cs()
             raw_data()
             choice="n"
-            while choice.lower()=="n":
+            while choice.lower()!="y":
                 ani("Would you like to exit the sub-program? (y/n)")
                 choice = input("")
                 if choice.lower() == "y":
@@ -63,7 +63,7 @@ def ui():
                 pci()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -79,7 +79,7 @@ def ui():
                 bcif()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -96,7 +96,7 @@ def ui():
                 bcif()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -133,7 +133,7 @@ def ui():
                 pcw()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -149,7 +149,7 @@ def ui():
                 bcwhy()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -166,7 +166,7 @@ def ui():
                 bcwhy()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -208,7 +208,7 @@ g) Exit sub-program""")
                 enlist_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -224,7 +224,7 @@ g) Exit sub-program""")
                 housing_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -240,7 +240,7 @@ g) Exit sub-program""")
                 employ_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -256,7 +256,7 @@ g) Exit sub-program""")
                 edu_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -272,7 +272,7 @@ g) Exit sub-program""")
                 cd_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":
@@ -292,7 +292,7 @@ g) Exit sub-program""")
                 cd_avg()
                 print("")
                 choice = "n"
-                while choice.lower()=="n":
+                while choice.lower()!="y":
                     ani("Would you like to exit the sub-program? (y/n)")
                     choice = input("")
                     if choice.lower() == "y":

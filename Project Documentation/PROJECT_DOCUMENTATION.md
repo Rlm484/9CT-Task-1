@@ -106,17 +106,4 @@
 ### PLEASE REFER TO README FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE
 ### [Click here for README](https://github.com/Rlm484/9CT-Task-1/blob/main/README.md)
 
-# **Installation Instructions**
-### 1.
-### 2. 
-### 3.
-
-# **How to use the 'Enlistment Data Interface'**
-## *Opening the Program*
-### 1. When opening the repository through Github, click on the folder [Main], then click on the python file [main.py]
-### 2. Once on the file run the code, this will then take you to the actual interface
-## *Using the Program*
-### 3. When running the program, it should ask you for a username. This username can/may be anything whatsoever, due to it not actually being saved into the program files. (This will not affect the program whatsoever other than creating a more personalised experience)
-### 4. 
-
 # **Phase 4 - Testing and Evaluating**

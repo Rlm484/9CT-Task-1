@@ -14,7 +14,7 @@ def cs():                 #Function from the game I made earlier this year
     else:  # macOS and Linux
         os.system('clear')
 
-def ani(text, delay=0.04): #Function from the game I made earlier this year
+def ani(text, delay=0.03): #Function from the game I made earlier this year
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
