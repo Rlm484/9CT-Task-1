@@ -43,20 +43,26 @@
     User views/sees the user interface along with all the choices/options
 
     User chooses one of the 5 different options with different outcomes:
-    1. View the Data Frame of Raw Data?
+    1. View Raw Data
         a) Import pandas dataframe and present it to the user
-    2. See the Visualisation of whether people wish to enlist?
-        a) View as a Pie chart?
-        b) View as a Bar chart?
-    3. See the Visualisation of why people wish to enlist?
-        a) View as a Pie chart?
-        b) View as a Bar chart?
-    4. View averages of survey outcomes?
-        a) View the averages of the Pro-Enlist faction?
-        b) View the averages of people's thoughts on enlisting for Housing opportunities (no./5)?
-        c) View the averages of people's thoughts on enlisting for Employment opportunities (no./5)?
-        d) View the averages of people's thoughts on enlisting for Education opportunities (no./5)?
-        e) View the averages of people's thoughts on enlisting for Civil Duty (no./5)?
+    2. View Data Visualisation: How people see Enlistment (1-10)
+        a) View as a Pie chart
+        b) View as a Bar chart
+        c) View both Charts
+        d) Exit sub-program
+    3. View Data Visualisation: Main reason people would Enlist
+        a) View as a Pie chart
+        b) View as a Bar chart
+        c) View both Charts
+        d) Exit sub-program
+    4. View Averages
+        a) View Averages for thoughts on Enlistment? (Choices were on a scale of 1-10)
+        b) View Averages for thoughts on Enlisting for Housing? (Choices were made on a scale of 1-5)
+        c) View Averages for thoughts on Enlisting for Employment? (Choices were made on a scale of 1-5)
+        d) View Averages for thoughts on Enlisting for Eduucation? (Choices were made on a scale of 1-5)
+        e) View Averages for thoughts on Enlisting for Civil Duty? (Choices were made on a scale of 1-5)
+        f) View all Averages
+        g) Exit sub-program
     5. Exit
 
     System runs code based on what the user chose to do, including sub-selection. Whether that be importing/presenting data frames, opening/presenting graphs or charts, calculating averages for all outcomes/choices, and closing/ending the loop or program.
@@ -97,4 +103,20 @@
 |Highest Rated Section|str|XX...XX|Word/s representing a specific reason someone may enlist that each responder chose|Civil Duty|Must be a word/s that comes from the 4 options given in the form| 
 
 # **Phase 3 - Producing and Implementing**
-### PLEASE REFER TO READ-ME FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE
+### PLEASE REFER TO README FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE
+### [Click here for README](https://github.com/Rlm484/9CT-Task-1/blob/main/README.md)
+
+# **Installation Instructions**
+### 1.
+### 2. 
+### 3.
+
+# **How to use the 'Enlistment Data Interface'**
+## *Opening the Program*
+### 1. When opening the repository through Github, click on the folder [Main], then click on the python file [main.py]
+### 2. Once on the file run the code, this will then take you to the actual interface
+## *Using the Program*
+### 3. When running the program, it should ask you for a username. This username can/may be anything whatsoever, due to it not actually being saved into the program files. (This will not affect the program whatsoever other than creating a more personalised experience)
+### 4. 
+
+# **Phase 4 - Testing and Evaluating**

@@ -157,7 +157,7 @@ def pci(): #pie chart if enlist
     
     times = rd_df["Enlistment Rating (1-10)"].value_counts().sort_index()
 
-    pltmap=plt.get_cmap("Pastel2")
+    pltmap=plt.get_cmap("YlGnBu")
     colors = pltmap(np.linspace(0,1,len(times)))
 
     plt.figure(figsize=(6,6))
@@ -203,5 +203,3 @@ def pcw(): #pie chart why enlist
     plt.title("Peoples Highest Rated Reason to Enlist [Percentages rounded to 1d.p]")
     plt.axis("equal")
     plt.show()
-
-pci()
