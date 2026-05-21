@@ -1,4 +1,4 @@
-# **Assessment Task 1 2026**
+# **Assessment Task 1 2026 - By Rachael MacKinnon**
 # **Phase 1 - Identifying and Defining**
 ## Mindmap
 ![Mindmap](Images/Mindmap.png)
@@ -6,7 +6,7 @@
 [Miro Mindmap Link!](https://miro.com/app/board/uXjVHdK6NuQ=/?share_link_id=179304639963)
 
 ## Defining My Purpose
-### Hypothesis: *Students in Gosford High are LESS LIKELY to enlist for the ADF after High School*
+### Hypothesis: *Students in Gosford High are LESS LIKELY to view the ADF along with Enlistment in a positive light*
 
 ## Requirement Outline
 ### Functional Requirements
@@ -77,19 +77,21 @@
 
 # **Phase 2 - Researching and Planning**
 ## Researching my Chosen Issue
-### Due to the lack of information online related to the hypothesis, only 3 websites are listed below:
-### https://www.abs.gov.au/articles/australian-defence-force-service
-### https://theforge.defence.gov.au/article/deep-dive-our-tiny-recruitment-pool
-### https://generationsurvey.org.au/data_story/young-australians-aspire-to-join-the-defence-force/?utm_source=copilot.com
+> ### Due to the lack of information online related to the hypothesis, only 3 websites are listed below:
+
+> ### https://www.abs.gov.au/articles/australian-defence-force-service
+> ### https://theforge.defence.gov.au/article/deep-dive-our-tiny-recruitment-pool
+> ### https://generationsurvey.org.au/data_story/young-australians-aspire-to-join-the-defence-force/?utm_source=copilot.com
 
 ## Discussing my Findings - SEEC/L
-### In regards to the overall information retrieved from the websites listed, a common point I've found is the fact that only a very small minority of the population actually serve in the army. You see, when refering to enlistment, there are actually 2 major parts. The first is choosing to enlist (signing up for the army), and the second is being actually chosen to be a part of the ADF. When seeing if a young person is eligible to serve, the ADF does have to still see if they meet the criteria (e.g. health, criminal records, etc). These factors make the pool of recruits even smaller for the ADF, subsequently, only 16% of young Australians both meet the criteria to qualify for  the ADF, and actually show the interest to join the military, causing only a minority to serve. 
+> ### In regards to the overall information retrieved from the websites listed, a common point I've found is the fact that only a very small minority of the population actually serve in the army. You see, when refering to enlistment, there are actually 2 major parts. The first is choosing to enlist (signing up for the army), and the second is being actually chosen to be a part of the ADF. When seeing if a young person is eligible to serve, the ADF does have to still see if they meet the criteria (e.g. health, criminal records, etc). These factors make the pool of recruits even smaller for the ADF, subsequently, only 16% of young Australians both meet the criteria to qualify for  the ADF, and actually show the interest to join the military, causing only a minority to serve. 
 
-### Leading on from the last paragraph, the majority of people who enlist seem to be university graduates. When looking at the goverment sight abs, we can see that the age that gets the most enlisters is 25-34, the average age where people have graduated from university. The total count in fact, was 21,168 people in 2021, compared to the runnerups (15-24) being 14,710, a full 144% increase in people. This data can allow us to corrolate the fact that people who want to go to the army probably want to get their education out of the way before starting, showing further evidence of university graduates probably being the biggest portion of the ADF. However, following the last paragraph, 21,168 people isnt actually a large number. Australia had 25.4 million people in 2021, meaning that the largest portion in the people enlisting (age wise), doesn't even add up to 1% of the population. This also further shows the fact that the amount of people that enlist are a very small minority overall.
+> ### Leading on from the last paragraph, the majority of people who enlist seem to be university graduates. When looking at the goverment sight abs, we can see that the age that gets the most enlisters is 25-34, the average age where people have graduated from university. The total count in fact, was 21,168 people in 2021, compared to the runnerups (15-24) being 14,710, a full 144% increase in people. This data can allow us to corrolate the fact that people who want to go to the army probably want to get their education out of the way before starting, showing further evidence of university graduates probably being the biggest portion of the ADF. However, following the last paragraph, 21,168 people isnt actually a large number. Australia had 25.4 million people in 2021, meaning that the largest portion in the people enlisting (age wise), doesn't even add up to 1% of the population. This also further shows the fact that the amount of people that enlist are a very small minority overall.
 
 ## Aquiring my Data
 > ### [GOOGLE FORM!: What are YOUR thoughts on Military?](https://forms.gle/VNycTJ2GhKjxYJcd9)
-### The above is a google form for the students of Gosford High School, filled in by peers across the school community.
+
+### The above link is a google form for the students of Gosford High School, filled in by peers across the school community.
 
 ## Teenage thoughts on Enlistment -  Data Dictonary
 |Field|Datatype|Format for Display|Description|Example|Validation|
@@ -104,6 +106,50 @@
 
 # **Phase 3 - Producing and Implementing**
 ### PLEASE REFER TO README FILE FOR AN EXPLANATION FOR HOW TO USE THE WEBSITE
-### [Click here for README](https://github.com/Rlm484/9CT-Task-1/blob/main/README.md)
+> ### [Click here for README](https://github.com/Rlm484/9CT-Task-1/blob/main/README.md)
 
 # **Phase 4 - Testing and Evaluating**
+## Testing your Analysis
+### [ All testing of the program had a positive outcome without any bugs. All algorithms work correctly and provide accurate responses, corrolating with the CSV. ]
+
+## Analyse and Conclude
+### In regards to the overall findings, we have extracted much information from the survey as a whole. These findings include two major discoveries:
+> ### Firstly, the highest reason/s for enlistment across all responses was that of Education and Housing. However, this data cannot be called completely accurate. This is due to the raw data extracted from the survey being limited, in other words, there aren't enough responses to create a definite conclusion. Implications of this shows that next time, as the dev, I could make the form a lot earlier, allowing me to collect more data and research. Note however, that this extracted information from the findings isn't directly corrolated with the actual hypothesis, which brings me to my second discovery.
+
+> ### The second discovery is that the average score for enlistment on a scale of 1-10 is 6.57. This means that actually, the hypothesis was null, meaning I was wrong. The data gathered and the information extracted has proved that technically, the general consensus sees enlistment and subsequently, the ADF, in a good/positive way. This outcome is counter-active to the hypothesis proposed, proving a positive outcome, instead of a negative one. This data however, does have it's drawbacks, as in it can't definitively prove how people see the ADF due to the information only displaying thoughts on enlistment. Implications of this can cause me, the dev, to next time add more specific questions that reflect the hypothesis more closely.
+
+## Peer Verification - Written by Avina Venati
+|P|M|I|
+|-|-|-|
+|The options are very clear and detailed|The only drawback would be the speed at which the program outputs the information, it is a little bit slow|Only implication might be to make the output information a bit faster|
+|The chosen options output all the correct information and visualisations|||
+|Program is not complicated and is very clear to navigate in and around|||
+|Every aspect of it works without any errors or misinformation|||
+|Topic is also unique|||
+
+## Evaluating your Project
+### **Evaluate system in relation to Requirements Outlined**
+----
+> ### When referring to my functional requirements, the system completes the criteria listed:
+> ### Data loads/imports into the program smoothly while also turning it into a dataframe without causing any errors whatsoever. Charts have also provided the same outcome in regard to loading. 
+> ### For Data cleaning, there are no missing values, proving the skipping function unneeded for the program itself. On top of this, the UI basically provides filtering for the user in itself, without needing external functions.
+> ### Data analysis is achieved through the program accurately displaying the mean of multiple responses and summarising data shown.
+> ### Pandas dataframes and matplotlib charts also provide clear interpretative data in a visual way that is easy for the user to understand for data visualisation.
+> ### Finally (for functional requiremennts), the program *outputs charts that contrivute to answering the original question in a way that allows users to visualize the data*, calculating averages and displaying all other forms of information. UI works perfectly, and pandas, matplotlib, & the CSV file have all contributed to making a successful program, completing the data reporting requirements.
+
+### When referring to my non-functional requirements, the system also completes the criteria listed:
+> ### In corrolation with usability, the UI does offfer multiple choices, being created in a way that allows easy navigation for the user.
+> ### For reliability, the system does deal with bugs/errors (e.g. invalid inputs), and elif/if/else has been used to filter errors/bugs. Data integrity is also ensured due to the primary research done, and the systems non-collection/saving of the data inserted for usernames.
+----
+### **Evalute system in relation to Peer Feedback**
+----
+### In regards to peer feedback (PMI), the system seems to have receieved positive reviews. User feedback included the fact that the system was easy to use, and provided accuracy in data and charts. System navigation in regards to convenience was also complimented, and no errors or bugs were reported; topic/research the system was based off of was also mentioned as unique for the user.
+----
+### **Evaluate project in relation to project management**
+----
+### In relation the the project management for Assessment Task 1: Computing Technology; the time management was pretty poor. Due to my trip to New Zealand in Week 2/3 (weekend), project was delayed. On top of this, another assessment task was due a week before the one submitted, delaying progress further. Eventually, I did get it done, but not in a timely way that would have been a more efficient use of my time.
+![Gantt](Images/Gantt.png)
+----
+### **Evaluate system in relation to Data and Security**
+----
+### When viewing my project in regards to it's data and security, I am safe to say that the data is in fact valid, accurate, and relevant to the current generation. This can be proved by the fact of how only DOE students could answer the form, and how it came from real human beings. Linear scales were used to ensure accuracy, and validity is confirmed by the diverse responses. This also means the data is unbiased. Though, yes, as a student myself, I did submit a response of how I thought of enlistment, my response was only a fraction of 39 responses overall, ensuring an overall unbiased outcome. Imporvement of security is also unnessecary, due to the program not storing the names inserted at the beginning of running the program, meaning security is also ensured. The UX however, can be improved. UX could be improved through looping of sub-programs, to make it more convenient for users to view sub-options within the sub-program. 

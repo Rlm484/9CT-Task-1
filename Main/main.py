@@ -194,7 +194,7 @@ def ui():
             ani("""a) View Averages for thoughts on Enlistment? (Choices were on a scale of 1-10)
 b) View Averages for thoughts on Enlisting for Housing? (Choices were made on a scale of 1-5)
 c) View Averages for thoughts on Enlisting for Employment? (Choices were made on a scale of 1-5)
-d) View Averages for thoughts on Enlisting for Eduucation? (Choices were made on a scale of 1-5)
+d) View Averages for thoughts on Enlisting for Education? (Choices were made on a scale of 1-5)
 e) View Averages for thoughts on Enlisting for Civil Duty? (Choices were made on a scale of 1-5)
 f) View all Averages
 g) Exit sub-program""")
